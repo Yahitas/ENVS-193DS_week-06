@@ -1,0 +1,44 @@
+---
+title: "Week 06"
+author: "Kyle Cahitas"
+format: html
+editor: visual
+---
+
+```{r package-set-up}
+#should all be good - kyle 
+library(tidyverse)
+library(here)
+library(naniar)
+library(skimr) 
+library(plotly)
+library(magick)
+library(NatParksPalettes)
+library(wesanderson)
+library(patchwork)
+
+```
+
+```{r LAODING-DATA }
+#creating a new object called whales 
+#read in the whales data
+# read_csv is different from read.csv
+whales <- read_csv(
+  here("data", "Graywhale_watching_2007_2019.csv")
+)
+view(whales)
+#each role is a observation off of gray whales 
+
+```
+
+```{r missing-data-vis}
+gg_miss_var(whales)
+
+```
+
+use 'skimr' package to quickly glimpse the data:
+
+```{r glimpse-of-data-using-skimr}
+skim(whales)
+# gives a nice summary of what df 
+```

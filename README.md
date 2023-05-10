@@ -56,3 +56,10 @@ The gray whale count happens every year off of Coal Oil Point! Read more about t
 The object `whale_image1` comes from [NOAA Fisheries](https://www.fisheries.noaa.gov/species/gray-whale). The object `whale_image2` is read in using `magick::image_read()` from this [URL](https://www.acsonline.org/assets/images/eschrichtius-robustus.png) (current as of 2023-05-09).  
 
 
+
+
+
+
+##########
+TO make github page a web go to settings, pages, github pages and then change, branch to main and then root and save 
+
